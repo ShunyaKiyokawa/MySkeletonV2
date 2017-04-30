@@ -25,4 +25,8 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	//thmeleafをimport
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+	//.javaをhotdeployするためにdevtoolをimport
+	compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
 }
