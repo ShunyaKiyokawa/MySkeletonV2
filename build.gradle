@@ -29,4 +29,6 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
 	//.javaをhotdeployするためにdevtoolをimport
 	compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '1.5.3.RELEASE'
+	compile group: 'org.hsqldb', name: 'hsqldb', version: '2.0.0'
 }

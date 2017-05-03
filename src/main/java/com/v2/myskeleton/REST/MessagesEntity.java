@@ -1,4 +1,4 @@
-package com.v2.myskeleton;
+package com.v2.myskeleton.REST;
 import java.io.Serializable;
 
 public class MessagesEntity implements Serializable{

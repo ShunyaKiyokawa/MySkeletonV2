@@ -1,0 +1,10 @@
+<!--  System.logを出す。このxmlは配置するだけで、他の設定は不要 -->
+
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <logger name="com.amazonaws" level="INFO"/>
+    <logger name="org.hibernate" level="ERROR"/>
+    <logger name="org.springframework" level="INFO"/>
+    <logger name="org.thymeleaf" level="DEBUG"/>
+</configuration>
+ 

@@ -1,0 +1,3 @@
+/resource/static直下の静的ファイルは、http://localhost:8080/memo/memo.txt
+http://localhost:8080/bootstrap/css/bootstrap.css
+とかでたどり着く

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<!-- 次のInTitleは、message.propertiesのものをコントローラーから明示的に送信されている -->
+<title th:text="${InTitle}"></title>
+</head>
+<body>
+<p>
+	<span th:text="${InHello}">aaaaaaaaaa</span>
+</p>
+<!-- 次のlocation.testは、message.propertiesのものをViewから取得して表示 -->
+<p th:text="#{location.test}"></p>
+</body>
+</html>
