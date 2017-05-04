@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS myskeletonv2table (
+    id  INT PRIMARY KEY AUTO_INCREMENT,
+    text VARCHAR(255)
+);

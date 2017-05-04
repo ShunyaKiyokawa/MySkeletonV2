@@ -8,19 +8,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+//DBと連携していないので、アプリを再起動したらデータは消える
+
 @RestController
 @RequestMapping("/messages")
 public class MessagesConroller {
 	// <>の中にはclass名（型）を指定すること
 	final List<MessagesEntity> messages = new CopyOnWriteArrayList<>();
-	
+
 	@RequestMapping(method = RequestMethod.GET)
-	public List<MessagesEntity> getMessages(){
+	public List<MessagesEntity> getMessages() {
 		return messages;
 	}
-	
+
 	@RequestMapping(method = RequestMethod.POST)
-	public MessagesEntity postMessages(@RequestBody MessagesEntity message){
+	public MessagesEntity postMessages(@RequestBody MessagesEntity message) {
 		messages.add(message);
 		return message;
 	}
