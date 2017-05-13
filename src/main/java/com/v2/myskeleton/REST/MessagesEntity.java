@@ -11,6 +11,8 @@ public class MessagesEntity implements Serializable {
 	// なお、setter, getterの特徴は、private String
 	// texttestとしたら、get/setTexttest()にしないといけないこと
 	// getTexttext()とせずgetText()とした場合、出力されるのが"test"=nullであること
+	
+	//lombok使えば楽になりそうですけどね。@getter @setter
 	public String getTexttest() {
 		return texttest;
 	}

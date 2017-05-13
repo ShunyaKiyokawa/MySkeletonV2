@@ -19,4 +19,5 @@ public class AuthenticationController {
 	public ModelAndView remove(ModelAndView mav) {
 		return new ModelAndView("redirect:/");
 	}
+
 }
