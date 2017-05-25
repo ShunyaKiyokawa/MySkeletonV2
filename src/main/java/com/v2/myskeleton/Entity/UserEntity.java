@@ -20,6 +20,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @Table(name="Users")
 public class UserEntity implements UserDetails {
 
+	//コンストラクタエラーが出た場合、だいたいここでfinal使ってるから起こる
 	private final UserEntity userEntity;
 	//private final Collection<GrantedAuthority> authorities;
 	
